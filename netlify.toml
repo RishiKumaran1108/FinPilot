@@ -1,13 +1,13 @@
 [build]
-  command = "npm run build"
+  command = "bash netlify-build.sh"
   publish = ".output/public"
 
 [build.environment]
-  NITRO_PRESET = "netlify-edge"
+  NITRO_PRESET = "netlify"
   NODE_VERSION = "20"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/edge-functions/server"
+  to = "/.netlify/functions/server"
   status = 200
   force = false
