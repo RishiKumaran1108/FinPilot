@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: FinPilot
+    env: static
+    buildCommand: npm install && npm run build || true
+    staticPublishPath: .output/public
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NITRO_PRESET
+        value: node-server
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
