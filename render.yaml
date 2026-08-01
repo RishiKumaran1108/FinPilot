@@ -2,7 +2,7 @@ services:
   - type: web
     name: FinPilot
     env: static
-    buildCommand: npm install && npm run build || true
+    buildCommand: npm ci && npm run build
     staticPublishPath: .output/public
     envVars:
       - key: NODE_VERSION
