@@ -12,7 +12,7 @@
     "format": "prettier --write ."
   },
   "overrides": {
-    "@vercel/nft": "^0.29.2"
+    "@vercel/nft": "^0.29.4"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -82,7 +82,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
-    "@vercel/nft": "^0.29.2",
+    "@vercel/nft": "^0.29.4",
     "nitro": "3.0.260603-beta",
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
