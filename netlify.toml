@@ -3,10 +3,11 @@
   publish = ".output/public"
 
 [build.environment]
-  NITRO_PRESET = "netlify"
+  NITRO_PRESET = "netlify-edge"
   NODE_VERSION = "20"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/.netlify/edge-functions/server"
   status = 200
+  force = false
