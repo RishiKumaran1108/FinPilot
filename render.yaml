@@ -8,7 +8,7 @@ services:
       - key: NODE_VERSION
         value: 20
       - key: NITRO_PRESET
-        value: static
+        value: node-server
     routes:
       - type: rewrite
         source: /*
